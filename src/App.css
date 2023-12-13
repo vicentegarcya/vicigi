@@ -14,25 +14,61 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100px;
+  font-size: 3.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.App-body {
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+}
+
+.main-content {
+  width: fit-content;
+  margin-top: 30px;
+  height: 65dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro {
+  width: 50vw;
+  font-size: 2.9vw;
+  margin: auto;
+}
+
+.controllers {
+  width: fit-content;
+  height: auto;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 20px;
+  color: blue;
+  font-family: 'Butler-light';
 }
 
-.App-link {
-  color: #61dafb;
+.controllers > h2 {
+  margin: 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controllers > button {
+  font-size: 3vw;
+}
+
+.previous-btn {
+  transform: rotate(180deg);
+  margin-top: -9px;
+}
+
+.next-btn {
+  margin-top: 8px;
 }
