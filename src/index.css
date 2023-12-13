@@ -20,6 +20,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   letter-spacing: 0.75px;
+  font-size: 1.5vw;
 }
 
 code {

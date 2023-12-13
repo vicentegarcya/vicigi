@@ -30,6 +30,8 @@
   justify-content: flex-start;
 }
 
+/* TOP */
+
 .main-content {
   width: fit-content;
   margin-top: 30px;
@@ -41,9 +43,34 @@
 
 .intro {
   width: 50vw;
-  font-size: 2.9vw;
+  font-size: 2.7vw;
   margin: auto;
 }
+
+.intro > div {
+  width: 100dvw;
+  height: 100dvh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../public/intro.gif);
+  background-size: cover;
+  z-index: -1;
+  filter: grayscale();
+}
+
+.primer-beso > div  {
+  background-image: url('../public/night-sky.jpg');
+  background-size: 150%;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+/* BOTTOM */
 
 .controllers {
   width: fit-content;
@@ -52,23 +79,16 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  color: blue;
   font-family: 'Butler-light';
+  letter-spacing: 1px;
 }
 
 .controllers > h2 {
-  margin: 0 20px;
+  margin: 0 20px 0 25px;
+  font-family: 'Butler-light';
+  font-size: 2vw
 }
 
 .controllers > button {
   font-size: 3vw;
-}
-
-.previous-btn {
-  transform: rotate(180deg);
-  margin-top: -9px;
-}
-
-.next-btn {
-  margin-top: 8px;
 }
